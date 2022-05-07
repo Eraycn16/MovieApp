@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tr_card"
+    android:foreground="?selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/tr_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+       </ImageView>
+
+        <TextView
+            android:id="@+id/tr_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Name"
+            android:layout_toEndOf="@id/tr_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:padding="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tr_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Date"
+            android:layout_toEndOf="@id/tr_img"
+            android:layout_below="@id/tr_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:padding="5dp">
+        </TextView>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
